@@ -31,7 +31,7 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="227.0" layoutY="277.0" mnemonicParsing="false" onAction="#onAtualizarPlanoClick" prefHeight="39.0" prefWidth="163.0" text="ATUALIZAR PLANO" textFill="#007a82">
+      <Button layoutX="224.0" layoutY="277.0" mnemonicParsing="false" onAction="#onAtualizarPlanoClick" prefHeight="39.0" prefWidth="169.0" text="ATUALIZAR PLANO" textFill="#007a82">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>

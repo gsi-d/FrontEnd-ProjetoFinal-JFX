@@ -10,37 +10,22 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 import java.sql.SQLException;
 
 public class HelloController {
-
-    // Declarar as variáveis que tenho no view
     @FXML
     private TextField txtUser;
     @FXML
     private PasswordField txtPwd;
 
-    private String userMock = "admin";
-    private String pwdMock = "admin";
-
-    private boolean validaLogin(String user, String pwd){
-        if(user.equals(userMock) && pwd.equals(pwdMock)){
-            return true;
-        }
-        return false;
-    }
-
     @FXML
     protected void onLoginButtonClick() throws SQLException, IOException {
-        //Recuperar login e senha do frontend
         String login = txtUser.getText();
         String senha = txtPwd.getText();
 
         Usuario usuario = new UsuarioDAO().Login(login, senha);
 
-        //Verificar se o login e senha estão corretos
         if(usuario != null){
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setContentText("Login efetuado com sucesso!");

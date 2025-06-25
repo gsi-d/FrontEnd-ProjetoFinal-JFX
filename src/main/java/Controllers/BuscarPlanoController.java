@@ -1,10 +1,8 @@
 package Controllers;
 
 import DAO.PlanoDAO;
-import DAO.UsuarioDAO;
 import Entidades.Plano;
 import Entidades.Sessao;
-import Entidades.Usuario;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -14,8 +12,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
-
-import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.sql.SQLException;
 

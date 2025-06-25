@@ -34,7 +34,6 @@ public class AdicionarCarrinhoController {
 
             if (!planos.isEmpty()) {
                 StringBuilder itensText = new StringBuilder();
-                double total = 0;
                 for (Plano plano : planos) {
                     itensText.append("Id: ").append(plano.getId())
                             .append(" - Descrição: ").append(plano.getDescricao())
