@@ -1,11 +1,14 @@
 package DAO;
 
+import Entidades.CarrinhoItem;
 import Entidades.ConnectionDB;
 import Entidades.Plano;
 import Interfaces.IPlanoDAO;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PlanoDAO implements IPlanoDAO {
 
@@ -96,5 +99,29 @@ public class PlanoDAO implements IPlanoDAO {
             System.out.println("Erro ao atualizar plano");
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public List<Plano> BuscarTodosPlanos() throws SQLException {
+        try{
+            List<Plano> itens = new ArrayList<Plano>();
+            String SQL = "SELECT * from \"Plano\"";
+            ResultSet rs = ConnectionDB.getS().executeQuery(SQL);
+
+            while (rs.next()) {
+                Plano item = new Plano(
+                        rs.getString("Descricao"),
+                        rs.getInt("Preco"),
+                        rs.getInt("Duracao"),
+                        rs.getInt("Id")
+                );
+                itens.add(item);
+            }
+            return itens.isEmpty() ? new ArrayList<>() : itens;
+
+        }catch (Exception e){
+            System.out.println("Erro ao buscar planos: " + e.getMessage());
+        }
+        return new ArrayList<>();
     }
 }

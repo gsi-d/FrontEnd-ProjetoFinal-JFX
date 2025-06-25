@@ -36,6 +36,19 @@ public class CarrinhoItemDAO implements ICarrinhoItemDAO {
     }
 
     @Override
+    public int Remover(int idItem) throws SQLException {
+        try{
+            String SQL = "DELETE from \"CarrinhoItem\" WHERE id = " + idItem;
+            int linhasAfetadas = ConnectionDB.getS().executeUpdate(SQL);
+            return linhasAfetadas;
+        }catch (Exception e){
+            System.out.println("Erro ao remover item do carrinho.");
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    @Override
     public List<CarrinhoItem> BuscarTodosItens(int idCarrinho) throws SQLException {
         try{
             List<CarrinhoItem> itens = new ArrayList<CarrinhoItem>();

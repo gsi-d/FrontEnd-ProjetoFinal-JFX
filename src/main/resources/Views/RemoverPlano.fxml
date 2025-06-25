@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RemoverPlanoController">
    <children>
-      <Label layoutX="157.0" layoutY="22.0" prefHeight="39.0" prefWidth="303.0" text="REMOVER PLANO" textFill="#007a82">
+      <Label layoutX="156.0" layoutY="14.0" prefHeight="39.0" prefWidth="303.0" text="REMOVER PLANO" textFill="#007a82">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="147.0" layoutY="83.0" text="ID Plano">
+      <Label layoutX="53.0" layoutY="93.0" text="ID Plano">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <TextField layoutX="147.0" layoutY="110.0" fx:id="idPlanoField" prefWidth="200.0" />
+      <TextField fx:id="idPlanoField" layoutX="52.0" layoutY="117.0" prefHeight="25.0" prefWidth="122.0" />
 
-      <Button layoutX="226.0" layoutY="150.0" mnemonicParsing="false" onAction="#onRemoverClick" prefHeight="39.0" prefWidth="122.0" text="REMOVER" textFill="#007a82">
+      <Button layoutX="52.0" layoutY="150.0" mnemonicParsing="false" onAction="#onRemoverClick" prefHeight="39.0" prefWidth="122.0" text="REMOVER" textFill="#007a82">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="353.0" onAction="#onVoltarMenuClick" mnemonicParsing="false" text="VOLTAR PARA O MENU" />
+      <TextArea fx:id="planosTextArea" editable="false" layoutX="242.0" layoutY="96.0" prefHeight="282.0" prefWidth="332.0" />
+      <Button layoutX="17.0" layoutY="15.0" mnemonicParsing="false" onAction="#onVoltarMenuClick" text="VOLTAR " textFill="#007a82">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="242.0" layoutY="71.0" text="Planos:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
@@ -15,34 +16,37 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <TextField layoutX="147.0" layoutY="110.0" fx:id="txtIdPlano" prefWidth="200.0" />
+      <TextField fx:id="txtIdPlano" layoutX="147.0" layoutY="110.0" prefWidth="200.0" />
 
       <Label layoutX="147.0" layoutY="150.0" text="Descrição">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <TextField layoutX="147.0" layoutY="175.0" fx:id="txtDescricao" prefWidth="200.0" />
+      <TextField fx:id="txtDescricao" layoutX="147.0" layoutY="175.0" prefWidth="200.0" />
 
       <Label layoutX="147.0" layoutY="210.0" text="Preço">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <TextField layoutX="147.0" layoutY="235.0" fx:id="txtPreco" prefWidth="200.0" />
+      <TextField fx:id="txtPreco" layoutX="147.0" layoutY="235.0" prefWidth="200.0" />
 
       <Label layoutX="147.0" layoutY="270.0" text="Duração">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <TextField layoutX="147.0" layoutY="295.0" fx:id="txtDuracao" prefWidth="200.0" />
+      <TextField fx:id="txtDuracao" layoutX="147.0" layoutY="295.0" prefWidth="200.0" />
 
       <Button layoutX="226.0" layoutY="345.0" mnemonicParsing="false" onAction="#onAtualizarClick" prefHeight="39.0" prefWidth="122.0" text="ATUALIZAR" textFill="#007a82">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="353.0" onAction="#onVoltarMenuClick" mnemonicParsing="false" text="VOLTAR PARA O MENU" />
+      <Button layoutX="17.0" layoutY="15.0" mnemonicParsing="false" onAction="#onVoltarMenuClick" text="VOLTAR " textFill="#007a82">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
    </children>
 </AnchorPane>

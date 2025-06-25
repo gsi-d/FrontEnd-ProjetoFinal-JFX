@@ -23,6 +23,9 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="353.0" mnemonicParsing="false" onAction="#onVoltarMenuClick" text="VOLTAR PARA O MENU" />
+      <Button layoutX="17.0" layoutY="15.0" mnemonicParsing="false" onAction="#onVoltarMenuClick" text="VOLTAR " textFill="#007a82">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
    </children>
 </AnchorPane>

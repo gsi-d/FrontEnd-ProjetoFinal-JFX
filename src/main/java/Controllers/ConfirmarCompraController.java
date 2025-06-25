@@ -36,7 +36,9 @@ public class ConfirmarCompraController {
                     Plano plano = new PlanoDAO().BuscarPlano(item.getIdPlano());
                     double preco = plano.getPreco();
                     total += preco * item.getQuantidade();
-                    itensText.append(plano.getDescricao()).append(" - Quantidade: ").append(item.getQuantidade())
+                    itensText.append("Id: ").append(plano.getId())
+                            .append(" - Descrição: ").append(plano.getDescricao())
+                            .append(" - Quantidade: ").append(item.getQuantidade())
                             .append(" - Preço: ").append(preco * item.getQuantidade()).append("\n");
                 }
 

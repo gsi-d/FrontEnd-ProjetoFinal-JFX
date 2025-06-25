@@ -32,7 +32,7 @@ public class AdicionarCarrinhoController {
             }
             int quantidade = Integer.parseInt(txtQuantidade.getText());
 
-            CarrinhoItem item = new CarrinhoItem(idPlano, carrinho.getId(), quantidade);
+            CarrinhoItem item = new CarrinhoItem(carrinho.getId(),idPlano,  quantidade);
             new CarrinhoItemDAO().Adicionar(item);
 
             Alert a = new Alert(AlertType.INFORMATION);

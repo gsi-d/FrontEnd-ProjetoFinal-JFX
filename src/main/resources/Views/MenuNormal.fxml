@@ -6,7 +6,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MenuNormalController">
    <children>
-      <Label layoutX="248.0" layoutY="22.0" prefHeight="39.0" prefWidth="303.0" text="Menu" textFill="#007a82">
+      <Label layoutX="260.0" layoutY="20.0" prefHeight="39.0" prefWidth="82.0" text="Menu" textFill="#007a82">
          <font>
             <Font name="System Bold" size="27.0" />
          </font>
@@ -16,26 +16,26 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Button layoutX="35.0" layoutY="139.0" mnemonicParsing="false" onAction="#onAdicionarAoCarrinhoClick" prefHeight="52.0" prefWidth="230.0" text="ADICIONAR AO CARRINHO" textFill="#007a82">
+      <Button layoutX="186.0" layoutY="165.0" mnemonicParsing="false" onAction="#onAdicionarAoCarrinhoClick" prefHeight="39.0" prefWidth="230.0" text="ADICIONAR AO CARRINHO" textFill="#007a82">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button fx:id="btnBuscarPlano" layoutX="35.0" layoutY="81.0" mnemonicParsing="false" onAction="#onBuscarPlanoClick" prefHeight="52.0" prefWidth="149.0" text="BUSCAR PLANO" textFill="#007a82">
+      <Button fx:id="btnBuscarPlano" layoutX="226.0" layoutY="101.0" mnemonicParsing="false" onAction="#onBuscarPlanoClick" prefHeight="39.0" prefWidth="149.0" text="BUSCAR PLANO" textFill="#007a82">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="35.0" layoutY="200.0" mnemonicParsing="false" onAction="#onRemoverDoCarrinhoClick" prefHeight="52.0" prefWidth="230.0" text="REMOVER DO CARRINHO" textFill="#007a82">
+      <Button layoutX="185.0" layoutY="229.0" mnemonicParsing="false" onAction="#onRemoverDoCarrinhoClick" prefHeight="39.0" prefWidth="230.0" text="REMOVER DO CARRINHO" textFill="#007a82">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="35.0" layoutY="259.0" mnemonicParsing="false" onAction="#onConfirmarCompraClick" prefHeight="52.0" prefWidth="230.0" text="CONFIRMAR COMPRA" textFill="#007a82">
+      <Button layoutX="186.0" layoutY="291.0" mnemonicParsing="false" onAction="#onConfirmarCompraClick" prefHeight="39.0" prefWidth="230.0" text="CONFIRMAR COMPRA" textFill="#007a82">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="460.0" layoutY="22.0" onAction="#onLogoutClick" prefHeight="40" prefWidth="120" text="LOGOUT" textFill="#007a82" />
+      <Button layoutX="504.0" layoutY="14.0" onAction="#onLogoutClick" prefHeight="25.0" prefWidth="82.0" text="LOGOUT" textFill="#007a82" />
    </children>
 </AnchorPane>
