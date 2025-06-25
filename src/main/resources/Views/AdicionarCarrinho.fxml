@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdicionarCarrinhoController">
+
+   <children>
+      <Label layoutX="180" layoutY="20" text="ADICIONAR ITEM" textFill="#007a82">
+         <font><Font name="System Bold" size="27" /></font>
+      </Label>
+
+      <Label layoutX="100" layoutY="90" text="ID Plano" />
+      <TextField fx:id="txtIdPlano" layoutX="100" layoutY="115" prefWidth="200" />
+
+      <Label layoutX="100.0" layoutY="149.0" text="Quantidade" />
+      <TextField fx:id="txtQuantidade" layoutX="100.0" layoutY="170.0" prefWidth="200" />
+
+      <Button layoutX="232.0" layoutY="213.0" onAction="#onAdicionarClick" prefHeight="40" prefWidth="120" text="ADICIONAR" textFill="#007a82">
+         <font><Font name="System Bold" size="16" /></font>
+      </Button>
+
+      <Button layoutX="25.0" layoutY="334.0" onAction="#onVoltarMenuClick" prefHeight="40" prefWidth="120" text="VOLTAR" textFill="#007a82">
+         <font><Font name="System Bold" size="16" /></font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MenuAdmController">
+   <children>
+      <Label layoutX="157.0" layoutY="22.0" prefHeight="39.0" prefWidth="303.0" text="Menu Administrativo" textFill="#007a82">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="324.0" layoutY="140.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="35.0" fx:id="btnInserirPlano" layoutY="81.0" mnemonicParsing="false" onAction="#onInserirPlanoClick" prefHeight="52.0" prefWidth="149.0" text="INSERIR PLANO" textFill="#007a82">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="35.0" layoutY="141.0" mnemonicParsing="false" onAction="#onBuscarPlanoClick" prefHeight="52.0" prefWidth="149.0" text="BUSCAR PLANO" textFill="#007a82">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="35.0" layoutY="200.0" mnemonicParsing="false" onAction="#onRemoverPlanoClick" prefHeight="52.0" prefWidth="163.0" text="REMOVER PLANO" textFill="#007a82">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="35.0" layoutY="259.0" mnemonicParsing="false" onAction="#onAtualizarPlanoClick" prefHeight="52.0" prefWidth="169.0" text="ATUALIZAR PLANO" textFill="#007a82">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="460.0" layoutY="22.0" onAction="#onLogoutClick" prefHeight="40" prefWidth="120" text="LOGOUT" textFill="#007a82" />
+   </children>
+</AnchorPane>

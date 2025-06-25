@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.InserirPlanoController">
+   <children>
+      <Label layoutX="157.0" layoutY="22.0" prefHeight="39.0" prefWidth="303.0" text="INSERIR PLANO" textFill="#007a82">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDuracao" layoutX="149.0" layoutY="237.0" prefHeight="25.0" prefWidth="316.0" />
+      <Label layoutX="147.0"  layoutY="83.0" text="Descrição">
+         <font>
+            <Font  name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="226.0" fx:id="btnSalvar" layoutY="294.0" mnemonicParsing="false" onAction="#onSalvarClick" prefHeight="39.0" prefWidth="122.0" text="SALVAR" textFill="#007a82">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtDescricao" layoutX="147.0" layoutY="108.0" prefHeight="25.0" prefWidth="316.0" />
+      <Label layoutX="148.0" layoutY="150.0" text="Preço">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPreco" layoutX="148.0" layoutY="175.0" prefHeight="25.0" prefWidth="316.0" />
+      <Label layoutX="149.0" layoutY="212.0" text="Duração">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="353.0" onAction="#onVoltarMenuClick" mnemonicParsing="false" text="VOLTAR PARA O MENU" />
+   </children>
+</AnchorPane>

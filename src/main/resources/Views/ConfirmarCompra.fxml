@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ConfirmarCompraController">
+
+   <children>
+      <Label layoutX="160" layoutY="20" text="CONFIRMAR COMPRA" textFill="#007a82">
+         <font><Font name="System Bold" size="27" /></font>
+      </Label>
+
+      <Label layoutX="100.0" layoutY="56.0" text="Itens do Carrinho: " />
+
+      <TextArea fx:id="itensCarrinhoTextArea" editable="false" layoutX="100.0" layoutY="86.0" prefHeight="150" prefWidth="400" />
+
+      <Label layoutX="100.0" layoutY="246.0" text="Total do Carrinho: " />
+      <TextField fx:id="txtTotalCarrinho" editable="false" layoutX="100.0" layoutY="266.0" prefWidth="200" />
+
+      <Label layoutX="100.0" layoutY="306.0" text="Deseja confirmar a compra?" />
+
+      <Button layoutX="100.0" layoutY="336.0" onAction="#onConfirmarCompraClick" prefHeight="40" prefWidth="120" text="SIM" textFill="#007a82" />
+
+      <Button layoutX="250.0" layoutY="336.0" onAction="#onCancelarCompraClick" prefHeight="40" prefWidth="120" text="NÃO" textFill="#007a82" />
+
+      <Button layoutX="400.0" layoutY="336.0" onAction="#onVoltarMenuClick" prefHeight="40" prefWidth="120" text="VOLTAR" textFill="#007a82" />
+   </children>
+</AnchorPane>
