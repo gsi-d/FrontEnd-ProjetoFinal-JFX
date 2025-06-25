@@ -2,10 +2,13 @@ package Controllers;
 
 import DAO.CarrinhoDAO;
 import DAO.CarrinhoItemDAO;
+import DAO.PlanoDAO;
 import Entidades.Carrinho;
 import Entidades.CarrinhoItem;
+import Entidades.Plano;
 import Entidades.Sessao;
 import javafx.fxml.FXML;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -16,11 +19,46 @@ import javafx.scene.Scene;
 import javafx.fxml.FXMLLoader;
 import javafx.event.ActionEvent;
 
+import java.util.List;
+
 public class AdicionarCarrinhoController {
 
     @FXML private TextField txtIdPlano;
     @FXML private TextField txtQuantidade;
+    @FXML private TextArea planosTextArea;
 
+    @FXML
+    private void initialize() {
+        try {
+            List<Plano> planos = new PlanoDAO().BuscarTodosPlanos();
+
+            if (!planos.isEmpty()) {
+                StringBuilder itensText = new StringBuilder();
+                double total = 0;
+                for (Plano plano : planos) {
+                    itensText.append("Id: ").append(plano.getId())
+                            .append(" - Descrição: ").append(plano.getDescricao())
+                            .append(" - Preço: ").append(plano.getPreco())
+                            .append(" - Duração: ").append(plano.getDuracao()).append(" meses.").append("\n");
+                }
+
+                planosTextArea.setText(itensText.toString());
+            } else {
+                Alert alert = new Alert(AlertType.WARNING);
+                alert.setTitle("Alerta");
+                alert.setHeaderText(null);
+                alert.setContentText("Não existem planos cadastrados");
+                alert.showAndWait();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Erro");
+            alert.setHeaderText(null);
+            alert.setContentText("Erro ao carregar os planos.");
+            alert.showAndWait();
+        }
+    }
     @FXML
     private void onAdicionarClick() {
         try {

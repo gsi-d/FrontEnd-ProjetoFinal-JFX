@@ -11,19 +11,24 @@
          <font><Font name="System Bold" size="27" /></font>
       </Label>
 
-      <Label layoutX="100" layoutY="90" text="ID Plano" />
-      <TextField fx:id="txtIdPlano" layoutX="100" layoutY="115" prefWidth="200" />
+      <Label layoutX="52.0" layoutY="90.0" text="ID Plano" />
+      <TextField fx:id="txtIdPlano" layoutX="52.0" layoutY="115.0" prefWidth="200" />
 
-      <Label layoutX="100.0" layoutY="149.0" text="Quantidade" />
-      <TextField fx:id="txtQuantidade" layoutX="100.0" layoutY="170.0" prefWidth="200" />
+      <Label layoutX="52.0" layoutY="149.0" text="Quantidade" />
+      <TextField fx:id="txtQuantidade" layoutX="52.0" layoutY="170.0" prefWidth="200" />
 
-      <Button layoutX="232.0" layoutY="213.0" onAction="#onAdicionarClick" prefHeight="40" prefWidth="120" text="ADICIONAR" textFill="#007a82">
+      <Button layoutX="53.0" layoutY="213.0" onAction="#onAdicionarClick" prefHeight="40" prefWidth="120" text="ADICIONAR" textFill="#007a82">
          <font><Font name="System Bold" size="16" /></font>
       </Button>
-
+      <TextArea fx:id="planosTextArea" editable="false" layoutX="261.0" layoutY="96.0" prefHeight="282.0" prefWidth="332.0" />
       <Button layoutX="17.0" layoutY="15.0" mnemonicParsing="false" onAction="#onVoltarMenuClick" text="VOLTAR " textFill="#007a82">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
+      <Label layoutX="261.0" layoutY="71.0" text="Planos:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
